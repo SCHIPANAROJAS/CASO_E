@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Audiolibros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Audiolibros</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="audiolibro">
+            <div class="audiolibro-info">
+                <h1>El Poder del Conocimiento</h1>
+                <h2>Por Juan Pérez</h2>
+                <p>Sumérgete en este audiolibro transformador que explora el viaje de la sabiduría, el aprendizaje y el automejoramiento. Disponible en múltiples formatos para tu comodidad.</p>
+                <label>Formatos:</label>
+                <input type="radio" name="formato" id="mp3"> <label for="mp3">MP3</label>
+                <input type="radio" name="formato" id="aac"> <label for="aac">AAC</label>
+                <br>
+                <button id="btnComprar">Comprar Ahora</button>
+            </div>
+            <div class="audiolibro-imagen">
+                <img src="audiolibro-portada.png" alt="Portada de El Poder del Conocimiento">
+            </div>
+        </section>
+    </main>
+
+    <div id="modalCompra" class="modal-overlay">
+        <div class="modal">
+            <button class="close-modal" id="cerrarModal">×</button>
+            <h2>Ingrese sus datos</h2>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="tel" id="whatsapp" placeholder="Número de WhatsApp">
+            <button id="btnWhatsApp">Contactar por WhatsApp</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="estadisticas">
+            <span>10,000+ Descargas</span>
+            <span>4.8/5 Calificación</span>
+            <span>100+ Reseñas</span>
+            <span>Acceso Instantáneo</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
